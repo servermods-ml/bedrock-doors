@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bedrockdoors",
+  "version": "${version}",
+  "name": "Bedrock Doors",
+  "description": "Adds bedrock doors and trapdoors. Made for ServJam 2021",
+  "authors": [
+    "Exo",
+    "funnynumber"
+  ],
+  "contact": {
+    "website": "https://servermods.ml",
+    "repo": "https://github.com/servermods-ml/bedrock-doors"
+  },
+  "license": "MIT",
+  "icon": "assets/bedrockdoors/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "ml.servermods.bedrockdoors.Bedrockdoors"
+    ]
+  },
+  "mixins": [
+    "bedrockdoors.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
